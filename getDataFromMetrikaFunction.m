@@ -1,18 +1,27 @@
 /*
-    // Функция, при помощи которой мы забираем из API данные из Яндекс.Метрики
-    // Версия 1.02
-    // 
-    // Справка по api метрики:
-    // https://tech.yandex.ru/metrika/doc/api2/concept/about-docpage/
+     Функция, при помощи которой мы забираем из API данные из Яндекс.Метрики
+     Версия 1.02
+
+     metrikaFunction = (ids, dimensions, metrics, date1, date2, token, filters)
+     Все значения передаются как text. 
+     На выходе получается таблица с запрошенными полями.  
+
+     Домашняя страница: 
+     https://github.com/40-02/PQYandexMetrika/
+    
+     Справка по api метрики:
+     https://tech.yandex.ru/metrika/doc/api2/concept/about-docpage/
+    
 */
 
 let
     metrikaFunction = (ids as text, dimensions as nullable text, metrics as text, date1 as text, date2 as text, token as text, optional filters as text) => 
 
 
+
+
         // Определяем функцию metrika_fun внутри функции, которая будет вытаскивать CSV из API. 
         // На входе конфигурационная запись (формируется в основном теле программы ниже по коду).
-
 let
     metrika_fun = (bigRecordWithOptions as record, X as number) =>
 let
@@ -28,6 +37,8 @@ let
 in
     mergedColumns,
 
+
+
         // Определяем функцию metrika_json внутри функции, которая будет выгружать json версию отчета и возвращать из json максимальное количество строчек
     metrika_json = (bigRecordWithOptions as record) =>
 let
@@ -38,7 +49,11 @@ let
 in
     Source7,
 
-        // Основной код функции начинается здесь.
+
+/////////// Основной код функции начинается здесь. //////////
+
+
+
         // Формируем конфигурационную запись (record) для использования в функциях
     bigRecordWithOptions = [ids = ids, dimensions = dimensions, metrics = metrics, date1 = date1, date2 = date2, token = token, accuracy = "full"], 
     bigRecordWithFilters = if filters = null then bigRecordWithOptions else Record.AddField(bigRecordWithOptions, "filters", filters), 
