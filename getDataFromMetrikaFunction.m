@@ -1,6 +1,6 @@
 /*
      Функция, при помощи которой мы забираем из API данные из Яндекс.Метрики
-     Версия 1.02
+     Версия 1.03
 
      metrikaFunction = (ids, dimensions, metrics, date1, date2, token, filters)
      Все значения передаются как text. 
@@ -55,7 +55,7 @@ in
 
 
         // Формируем конфигурационную запись (record) для использования в функциях
-    bigRecordWithOptions = [ids = ids, dimensions = dimensions, metrics = metrics, date1 = date1, date2 = date2, token = token, accuracy = "full"], 
+    bigRecordWithOptions = [ids = ids, dimensions = dimensions, metrics = metrics, date1 = date1, date2 = date2, oauth_token = token, accuracy = "full"], 
     bigRecordWithFilters = if filters = null then bigRecordWithOptions else Record.AddField(bigRecordWithOptions, "filters", filters), 
 
         // Создаем список из чисел - сколько раз нам необходимо обратиться к api чтобы забрать по 10к строчек все данныые которые есть в метрке согласно нашим настройкам. 
