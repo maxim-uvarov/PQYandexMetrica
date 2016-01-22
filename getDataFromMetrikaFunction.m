@@ -1,6 +1,6 @@
 /*
      Функция, при помощи которой мы забираем из API данные из Яндекс.Метрики
-     Версия 1.03
+     Версия 1.04
 
      metrikaFunction = (ids, dimensions, metrics, date1, date2, token, filters)
      Все значения передаются как text. 
@@ -32,7 +32,11 @@ let
 
     Source = Csv.Document(Web.Contents(urlToGet),null,",",null,65001),
     #"First Row as Header" = Table.PromoteHeaders(Source),
-    mergedColumns = Table.Skip(#"First Row as Header",1)
+
+// Здесь пропускаем строчку итого, которая в csv отдается.
+// Для отчетов без измерений (только с метриками) итого не выводится, тогда используем полную страничку. 
+
+    mergedColumns = if Table.RowCount(#"First Row as Header") = 1 then #"First Row as Header" else Table.Skip(#"First Row as Header",1)
 
 in
     mergedColumns,
