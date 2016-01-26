@@ -1,8 +1,8 @@
 /*
      Функция, при помощи которой мы забираем из API данные из Яндекс.Метрики
-     Версия 1.04
+     Версия 1.05
 
-     metrikaFunction = (ids, dimensions, metrics, date1, date2, token, filters)
+     metrikaFunction = (ids, token, metrics, dimensions, date1, date2, filters)
      Все значения передаются как text. 
      На выходе получается таблица с запрошенными полями.  
 
@@ -11,14 +11,19 @@
     
      Справка по api метрики:
      https://tech.yandex.ru/metrika/doc/api2/concept/about-docpage/
-    
+
+     Авторизационный токен можно получить по ссылке:
+     https://oauth.yandex.ru/authorize?response_type=token&client_id=1317eb8e77a94e8eb2ad32385e0eff1a
+
+     Contributors:
+     1. Максим Уваров (http://40-02.ru)
+
+     Changelog
+     1.05    Изменил порядок параметров - чтобы унифицировать с pqApiConnectors. 
 */
 
 let
-    metrikaFunction = (ids as text, dimensions as nullable text, metrics as text, date1 as text, date2 as text, token as text, optional filters as text) => 
-
-
-
+    metrikaFunction = (ids as text, token as text, metrics as text, dimensions as nullable text, dateStart as date, dateFinish as date, optional filters as text) => 
 
         // Определяем функцию metrika_fun внутри функции, которая будет вытаскивать CSV из API. 
         // На входе конфигурационная запись (формируется в основном теле программы ниже по коду).
@@ -57,7 +62,8 @@ in
 /////////// Основной код функции начинается здесь. //////////
 
 
-
+    date1 = Date.ToText(dateStart, "yyyy-MM-dd"),
+    date2 = Date.ToText(dateFinish, "yyyy-MM-dd"),
         // Формируем конфигурационную запись (record) для использования в функциях
     bigRecordWithOptions = [ids = ids, dimensions = dimensions, metrics = metrics, date1 = date1, date2 = date2, oauth_token = token, accuracy = "full"], 
     bigRecordWithFilters = if filters = null then bigRecordWithOptions else Record.AddField(bigRecordWithOptions, "filters", filters), 
