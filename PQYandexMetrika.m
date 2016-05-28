@@ -21,7 +21,7 @@
 
 
      Contributors:
-     1. Максим Уваров (http://40-02.ru)
+     1. Максим Уваров (http://40-02.ru, http://needfordata.ru)
 
      Changelog
      1.05    Изменил порядок параметров - чтобы унифицировать с pqApiConnectors. 
