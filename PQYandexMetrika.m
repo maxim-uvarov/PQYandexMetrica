@@ -16,8 +16,9 @@
      Авторизационный токен можно получить по ссылке:
      https://oauth.yandex.ru/authorize?response_type=token&client_id=1317eb8e77a94e8eb2ad32385e0eff1a
 
-    Пример запроса
-    =PQYM("21781912","ym:s:<attribution>SearchPhrase","ym:s:visits,ym:s:bounces,ym:s:pageviews","2016-01-01","yesterday","0aa2c251c2264c0e94eff1348eed63be")
+    Примеры запросов:
+    =PQYM("21781912",""ym:s:visits,ym:s:bounces,ym:s:pageviews",ym:s:<attribution>SearchPhrase","2016-01-01","yesterday","0aa2c251c2264c0e94eff1348eed63be")
+    =PQYM("21781912","ym:s:visits,ym:s:bounces,ym:s:pageviews","ym:s:visitStartOfWeek,ym:s:sourceEngine","2016-01-01","yesterday","0aa2c251c2264c0e94eff1348eed63be")
 
 
      Contributors:
@@ -25,15 +26,14 @@
 
      Changelog
      1.05    Изменил порядок параметров - чтобы унифицировать с pqApiConnectors. 
-     1.07    Вернул назад исторический порядок настроек измерений и метрик,
-     добавил переменную direct_ids
+     1.07    Еще раз изменил порядок параметров - чтобы унифицировать с pqApiConnectors.
+     Добавил переменную direct_ids, которая необходима для получения данных по расходам. 
+     Переименовал переменные в коде
     
 */
 
 let
-    metrikaFunction = (ids as text, dimensions as nullable text, metrics as text, date1 as text, date2 as text, token as text, optional filters as text, optional direct_ids as text) => 
-
-
+    PQYM = (ids as text, metrics as text, dimensions as nullable text,  date1 as text, date2 as text, token as text, optional filters as text, optional direct_ids as text) => 
 
 
         // Определяем функцию metrika_fun внутри функции, которая будет вытаскивать CSV из API. 
@@ -63,10 +63,10 @@ in
 let
     urlToGet = "https://api-metrika.yandex.ru/stat/v1/data?" & Uri.BuildQueryString (bigRecordWithOptions),
 
-    Source6 = Json.Document(Web.Contents(urlToGet &"&limit=1")),
-    Source7 = Source6[total_rows]
+    jsonDocumentFromMetrika = Json.Document(Web.Contents(urlToGet &"&limit=1")),
+    MetrikaJsonOutput = jsonDocumentFromMetrika[total_rows]
 in
-    Source7,
+    MetrikaJsonOutput,
 
 
 /////////// Основной код функции начинается здесь. //////////
@@ -80,20 +80,20 @@ in
 
         // Создаем список из чисел - сколько раз нам необходимо обратиться к api чтобы забрать по 10к строчек все данныые которые есть в метрке согласно нашим настройкам. 
     Source0 = Number.RoundDown(metrika_json(bigRecordWithDirectIds)/10000,0),
-    Custom1 = {0..Source0},
-    Custom2 = List.Transform(Custom1, each _ * 10000 + 1),
+    listOfPages = {0..Source0},
+    listOf10kPages = List.Transform(listOfPages, each _ * 10000 + 1),
 
         // Используем список получившихся чисел, чтобы обратиться к api
-    Custom3 = List.Transform(Custom2, each metrika_fun(bigRecordWithDirectIds, _)),
+    TableChunks = List.Transform(listOf10kPages, each metrika_fun(bigRecordWithDirectIds, _)),
 
         // Создаем список с названиями заголовков полей
-    TableNames = Table.ColumnNames(Custom3{0}),
+    TableNames = Table.ColumnNames(TableChunks{0}),
 
         // Разворачиваем таблицы в списке с данными из Яндекс.Метрики и используем список с названиям заголовков, которые мы получили ранее
-    #"Converted to Table" = Table.FromList(Custom3, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
-    #"Expanded Column1" = Table.ExpandTableColumn(#"Converted to Table", "Column1", TableNames )
+    TableFromChunks = Table.FromList(TableChunks, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    OutputTable = Table.ExpandTableColumn( TableFromChunks , "Column1", TableNames )
 
 in
-    #"Expanded Column1"
+    OutputTable
 in
-    metrikaFunction
+    PQYM
