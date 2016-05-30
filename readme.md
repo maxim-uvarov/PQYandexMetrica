@@ -21,12 +21,12 @@
 
 Программа создавалась для собственного пользования и распространяется по доброте душевной в состоянии as is (под лицензией GPLv3 http://s.40-02.ru/1DHW9dz). 
 Автор не несет ответственности за ущерб, который можно получить при использовании данной таблички.
-Если у вас появилось желание сказать спасибо за данную программу, можете написать автору на max@k50.ru. 
+Если у вас появилось желание сказать спасибо за данную программу, можете написать автору на pqyandexmetrika@40-02.com. 
 
 
 ## Начало работы ##
 
-1. [Скачиваем последнюю версию Power Query](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI) и устанавливаем ее
+1. Для Excel 2016 ничего не делаем, для Excel 2010 и 2013 [Скачиваем последнюю версию Power Query](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI) и устанавливаем ее
 2. [Скачиваем последнюю версию файла PQYandexMetrika.xlsm](https://github.com/40-02/PQYandexMetrika/releases/latest)
 3. Открываем файл
 4. В настройках Power Query, на вкладке Privacy, включаем галку ["ignore the privacy levels"](#Ignore-the-privacy-levels)
