@@ -44,7 +44,7 @@
 4. Яндекс.Метрика: [Справка по api](https://tech.yandex.ru/metrika/doc/api2/api_v1/intro-docpage/)
 5. Яндекс.Метрики: [Список измерений и метрик в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/attrandmetr/dim_all-docpage/)
 6. Яндекс.Метрика: [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
-7. Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrika  
+7. Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrika для MS Excel
 [![Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrika](https://www.evernote.com/l/AAl5N6gUbaNEFKL1vVc0X73rVvAuoTpBIz8B/image.png)](https://youtu.be/UbehqWkzjO8?t=3m28s)
 
 ## Ignore the privacy levels
