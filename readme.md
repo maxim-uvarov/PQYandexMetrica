@@ -1,6 +1,7 @@
-# PQYandexMetrika - Экспорт данных из Яндекс.Метрики в Excel или Power BI#
+# PQYandexMetrika 
+## Экспорт данных из Яндекс.Метрики в Excel или Power BI
 
-Программа для экспорта данных Яндекс.Метрики в MS Excel.
+Программа для экспорта данных Яндекс.Метрики в MS Excel и Power BI.
 Поддерживаемые версии Excel 2010 и 2013 (с использованием надстройки [Power Query](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI)), 2016.
 
 ## Возможности:##
