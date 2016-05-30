@@ -26,7 +26,7 @@
 
 ## Начало работы ##
 
-1. Для Excel 2016 ничего не делаем, для Excel 2010 и 2013 [Скачиваем последнюю версию Power Query](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI) и устанавливаем ее
+1. Для Excel 2016 переходим к пункту 2, для Excel 2010 и 2013 [Скачиваем последнюю версию Power Query](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI) и устанавливаем ее
 2. [Скачиваем последнюю версию файла PQYandexMetrika.xlsm](https://github.com/40-02/PQYandexMetrika/releases/latest)
 3. Открываем файл
 4. В настройках Power Query, на вкладке Privacy, включаем галку ["ignore the privacy levels"](#Ignore-the-privacy-levels)
