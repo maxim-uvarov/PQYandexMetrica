@@ -13,8 +13,7 @@
 
 ## Требования: ##
 1. MS Windows XP или позже
-2. Power BI или MS Excel 
-3. MS Power Query
+2. Power BI или MS Excel (с установленным MS Power Query)
     
 ## Отказ от ответственности (disclaimer): ##
 
