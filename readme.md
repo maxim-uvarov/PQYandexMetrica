@@ -28,7 +28,7 @@
 1. [Скачиваем последнюю версию файла PQYandexMetrica](https://github.com/maxim-uvarov/PQYandexMetrica/releases/latest)
 3. Открываем файл
 4. В настройках Power BI на вкладке Privacy, включаем галку ["ignore the privacy levels"](#Ignore-the-privacy-levels)
-5. Для получения токена переходим по [ссылке](https://oauth.yandex.ru/authorize?response_type=token&client_id=1317eb8e77a94e8eb2ad32385e0eff1a). Эта же ссылка указана в рабочем файле, в ячейке "С3" на странице "1. mainConfigAndReport".
+5. Для получения токена переходим по [ссылке](https://oauth.yandex.ru/authorize?response_type=token&client_id=1317eb8e77a94e8eb2ad32385e0eff1a)
 6. По ссылке открывается страничка авторизации Яндекса, копируем токен
 8. Прописываем необходимые параметры конфигурации отчета (самое главное, не забудьте указать свой id счетчика)
 
