@@ -1,7 +1,7 @@
-# PQYandexMetrika 
+# PQYandexMetrica 
 ## Экспорт данных из Яндекс.Метрики в Excel или Power BI
 
-[![скачать](https://www.evernote.com/l/AAkzfENy9lRDZLvKJO8AxABeM-L-HjdtgOQB/image.png)](https://github.com/40-02/PQYandexMetrika/releases/latest)
+[![скачать](https://www.evernote.com/l/AAkzfENy9lRDZLvKJO8AxABeM-L-HjdtgOQB/image.png)](https://github.com/40-02/PQYandexMetrica/releases/latest)
 
 Программа для экспорта данных Яндекс.Метрики в Power BI и MS Excel for Windows (при помощи надстройки Power Query).
 
@@ -9,7 +9,7 @@
 
 1. Выгрузка отчетов из Яндекс.Метрики с допустимыми наборами измерений и метрик, без ограничений по размерам.
 2. Поддержка фильтров Яндекс.Метрики.
-3. Получение параметров конфигурации отчета в формате PQMetrika из Url скопированного в веб-интерфейсе
+3. Получение параметров конфигурации отчета в формате PQMetrica из Url скопированного в веб-интерфейсе
 
 ## Требования: ##
 1. MS Windows XP или позже
@@ -46,8 +46,8 @@
 6. Яндекс.Метрика: [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
 7. Видео о том как использовать PQYandexMetrika в Power BI
 [![Видео о том как использовать PQYandexMetrika в Power BI](https://www.evernote.com/l/AAn_WIzUlMtKVLlXKY5cR4i4KnRe4dXI7W4B/image.png)](https://vimeo.com/168589885/cd310c143d) . 
-8. Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrika для MS Excel
-[![Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrika](https://www.evernote.com/l/AAl5N6gUbaNEFKL1vVc0X73rVvAuoTpBIz8B/image.png)](https://youtu.be/UbehqWkzjO8?t=3m28s)
+8. Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrica для MS Excel
+[![Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrica](https://www.evernote.com/l/AAl5N6gUbaNEFKL1vVc0X73rVvAuoTpBIz8B/image.png)](https://youtu.be/UbehqWkzjO8?t=3m28s)
 
 ## Ignore the privacy levels
 ![Ignore the privacy levels in Power Query](http://dl.getdropbox.com/u/390630/2015-08-23%2021_29_16.gif)
