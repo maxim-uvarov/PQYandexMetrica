@@ -1,7 +1,7 @@
 # PQYandexMetrica 
 ## Экспорт данных из Яндекс.Метрики в Excel или Power BI
 
-[![скачать](https://www.evernote.com/l/AAkzfENy9lRDZLvKJO8AxABeM-L-HjdtgOQB/image.png)](https://github.com/40-02/PQYandexMetrica/releases/latest)
+[![скачать](https://www.evernote.com/l/AAkzfENy9lRDZLvKJO8AxABeM-L-HjdtgOQB/image.png)](https://github.com/maxim-uvarov/PQYandexMetrica/releases/latest)
 
 Программа для экспорта данных Яндекс.Метрики в Power BI и MS Excel for Windows (при помощи надстройки Power Query).
 
@@ -25,15 +25,12 @@
 
 ## Начало работы ##
 
-1. Для Excel 2016 переходим к пункту 2, для Excel 2010 и 2013 [Скачиваем последнюю версию Power Query](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI) и устанавливаем ее
-2. [Скачиваем последнюю версию файла PQYandexMetrika.xlsm](https://github.com/40-02/PQYandexMetrika/releases/latest)
+1. [Скачиваем последнюю версию файла PQYandexMetrica](https://github.com/maxim-uvarov/PQYandexMetrica/releases/latest)
 3. Открываем файл
-4. В настройках Power Query, на вкладке Privacy, включаем галку ["ignore the privacy levels"](#Ignore-the-privacy-levels)
+4. В настройках Power BI на вкладке Privacy, включаем галку ["ignore the privacy levels"](#Ignore-the-privacy-levels)
 5. Для получения токена переходим по [ссылке](https://oauth.yandex.ru/authorize?response_type=token&client_id=1317eb8e77a94e8eb2ad32385e0eff1a). Эта же ссылка указана в рабочем файле, в ячейке "С3" на странице "1. mainConfigAndReport".
 6. По ссылке открывается страничка авторизации Яндекса, копируем токен
-7. Вставляем токен в соответствующую ячейку на листе "1. mainConfigAndReport"
 8. Прописываем необходимые параметры конфигурации отчета (самое главное, не забудьте указать свой id счетчика)
-9. Жмем кнопку обновить и получаем отчет
 
 ## Полезные ссылки
 
