@@ -45,7 +45,3 @@
 [![Видео о том как использовать PQYandexMetrika в Power BI](https://www.evernote.com/l/AAn_WIzUlMtKVLlXKY5cR4i4KnRe4dXI7W4B/image.png)](https://vimeo.com/168589885/cd310c143d) . 
 8. Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrica для MS Excel
 [![Видео с мастер-класса Максима Уварова о том как использовать PQYandexMetrica](https://www.evernote.com/l/AAl5N6gUbaNEFKL1vVc0X73rVvAuoTpBIz8B/image.png)](https://youtu.be/UbehqWkzjO8?t=3m28s)
-
-## Ignore the privacy levels
-![Ignore the privacy levels in Power Query](http://dl.getdropbox.com/u/390630/2015-08-23%2021_29_16.gif)
-
