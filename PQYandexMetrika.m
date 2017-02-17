@@ -1,6 +1,7 @@
+// PQYM
 /*
      Функция, при помощи которой мы забираем из API данные из Яндекс.Метрики
-     Версия 1.13
+     Версия 1.14
 
      PQYM = (ids, dimensions, metrics, date1, date2, token, filters, direct_ids)
      Все значения передаются как text. 
@@ -31,7 +32,7 @@
      Переименовал переменные в коде.
      1.12    Перенес get-параметры в опцию Web.Contents формируемую через запись Query.
      1.13    Добавил обработку ошибок ответа сервера. Теперь, в случае неверно указанных параметров запроса - будет возвращаться, что конкретно не нравится метрике.
-     
+     1.14    Обновления в Power BI Service снова работает
     
 */
 
@@ -75,7 +76,7 @@ let
 
 
         // Забираем из интерента json, и в случае 400 ответа сервера обрабатываем ошибку
-    webContents1 = Web.Contents(urlToGet, [Query = bigRecordWithOptions & [limit = "1"]] & [ManualStatusHandling={400}]),
+    webContents1 = Web.Contents(urlToGet, [Query = bigRecordWithOptions & [limit = "1"], ManualStatusHandling={400}]),
 
     jsonDocumentFromMetrika = Json.Document(webContents1),
 
