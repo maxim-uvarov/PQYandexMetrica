@@ -38,7 +38,7 @@
 3. [PQGoogleAnalytics, проект на гитхабе](https://github.com/40-02/PQGoogleAnalytics)
 4. Яндекс.Метрика: [Справка по api](https://tech.yandex.ru/metrika/doc/api2/api_v1/intro-docpage/)
 5. Яндекс.Метрика: [Неполный список измерений и метрик в api в справке метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/attrandmetr/dim_all-docpage/)
-6. Яндекс.Метрика: [Расширенный список доступных измерений и метрик полученных по api](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640)
+6. Яндекс.Метрика: Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://needfordata-my.sharepoint.com/:x:/r/personal/max_needfordata_ru/_layouts/15/Doc.aspx?sourcedoc=%7B48dbf278-2be3-499f-9181-f3e5327a6b8a%7D&action=default) или [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640)
 6. Яндекс.Метрика: [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
 7. Видео о том как использовать PQYandexMetrika в Power BI
 [![Видео о том как использовать PQYandexMetrika в Power BI](https://www.evernote.com/l/AAn_WIzUlMtKVLlXKY5cR4i4KnRe4dXI7W4B/image.png)](https://vimeo.com/168589885/cd310c143d) . 
