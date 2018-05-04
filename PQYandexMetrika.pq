@@ -1,7 +1,6 @@
-// PQYM
 /*
      Функция, при помощи которой мы забираем из API данные из Яндекс.Метрики
-     Версия 1.14
+     Версия 1.16
 
      PQYM = (ids, dimensions, metrics, date1, date2, token, filters, direct_ids)
      Все значения передаются как text. 
@@ -32,7 +31,9 @@
      Переименовал переменные в коде.
      1.12    Перенес get-параметры в опцию Web.Contents формируемую через запись Query.
      1.13    Добавил обработку ошибок ответа сервера. Теперь, в случае неверно указанных параметров запроса - будет возвращаться, что конкретно не нравится метрике.
-     1.14    Обновления в Power BI Service снова работает
+     1.14    Исправил функцию, чтобы поддерживала обновление в Power BI Service
+     1.15    Исправил функцию getPQYMConfigFromUrl чтобы отдавала даты корректно
+     1.16    Исправил функцию PQYandexMetrica, чтобы принимала пустое поле dimensions. Удалил функцию getPQYMConfigFromUrl 
     
 */
 
@@ -91,7 +92,8 @@ in
 
 
         // Формируем конфигурационную запись (record) для использования в функциях
-    bigRecordWithOptions = [ids = ids, dimensions = dimensions, metrics = metrics, date1 = date1, date2 = date2, oauth_token = token, accuracy = "full"], 
+    dimensionsAfterNull = if dimensions = null then "" else dimensions,
+    bigRecordWithOptions = [ids = ids, dimensions = dimensionsAfterNull, metrics = metrics, date1 = date1, date2 = date2, oauth_token = token, accuracy = "full"], 
     bigRecordWithFilters = if filters = null then bigRecordWithOptions else Record.AddField(bigRecordWithOptions, "filters", filters), 
     bigRecordWithDirectIds = if direct_ids = null then bigRecordWithFilters else Record.AddField(bigRecordWithOptions, "direct_client_ids", direct_ids), 
 
