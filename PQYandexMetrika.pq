@@ -12,7 +12,7 @@
 
 
     Авторизационный токен можно получить по ссылке:
-    https://oauth.yandex.ru/authorize?response_type=token&client_id=1317eb8e77a94e8eb2ad32385e0eff1a
+    https://oauth.yandex.ru/authorize?response_type=token&client_id=dbb281abcd134b1bb4c624748f03cffe
 
     Примеры запросов:
     =PQYM("21781912","ym:s:visits,ym:s:bounces,ym:s:pageviews","ym:s:<attribution>SearchPhrase","2016-01-01","yesterday","AQAAAAAQy8J1AAFg-Xkrkp9D6kpGpHz2THTYX74")
@@ -75,7 +75,7 @@ let
         Токен и айди взяты из справки метрики. Если они перестанут работать,
         то возникнут ошибки. */
 
-    urlToGet = "https://api-metrika.yandex.ru/stat/v1/data.csv?ids=2138128&metrics=ym%3As%3Avisits&date1=yesterday&date2=yesterday&oauth_token=05dd3dd84ff948fdae2bc4fb91f13e22bb1f289ceef0037",
+    urlToGet = "https://api-metrika.yandex.ru/stat/v1/data.csv?ids=2138128&metrics=ym%3As%3Avisits&date1=yesterday&date2=yesterday",
 
     webContents2 = Web.Contents(urlToGet, [Query = bigRecordWithWithLimit, Headers = [Authorization="OAuth " & token]] ),
 
@@ -95,7 +95,7 @@ in
     metrika_json = (bigRecordWithOptions as record) =>
 
 let
-    urlToGet = "https://api-metrika.yandex.ru/stat/v1/data?ids=2138128&metrics=ym%3As%3Avisits&date1=yesterday&date2=yesterday&oauth_token=05dd3dd84ff948fdae2bc4fb91f13e22bb1f289ceef0037",
+    urlToGet = "https://api-metrika.yandex.ru/stat/v1/data?ids=2138128&metrics=ym%3As%3Avisits&date1=yesterday&date2=yesterday",
 
 
         // Забираем из интерента json, и в случае 400 ответа сервера обрабатываем ошибку
