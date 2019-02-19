@@ -1,5 +1,4 @@
-# PQYandexMetrica 
-## Экспорт данных из Яндекс.Метрики в Excel или Power BI
+# PQYandexMetrica - неофициальный коннектор к Яндекс.Метрике для Excel или Power BI
 
 [![скачать](https://www.evernote.com/l/AAkzfENy9lRDZLvKJO8AxABeM-L-HjdtgOQB/image.png)](https://github.com/maxim-uvarov/PQYandexMetrica/tree/master/Releases)
 
