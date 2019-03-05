@@ -1,5 +1,5 @@
-title: PQ Yandex Metrika
-description: Yandex Metrika Api Via Power Query For Excel
+title: PQYandexMetrica
+description: Коннектор к Reporting API Яндекс.Метрики для Power BI и Excel (через Power Query)
 google_analytics: 
 gtm: GTM-TL5F562
 show_downloads: true
