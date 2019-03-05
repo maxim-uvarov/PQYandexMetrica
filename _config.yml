@@ -1,0 +1,8 @@
+title: PQ Yandex Metrika
+description: Yandex Metrika Api Via Power Query For Excel
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
