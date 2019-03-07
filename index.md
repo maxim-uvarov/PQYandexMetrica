@@ -6,6 +6,7 @@ PQYandexMetrica - коннектор для подключения к API Янд
 
 1. Скачиваем файл
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UbehqWkzjO8?start=208" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
