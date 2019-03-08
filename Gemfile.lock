@@ -121,8 +121,6 @@ GEM
     jekyll-github-metadata (2.12.1)
       jekyll (~> 3.4)
       octokit (~> 4.0, != 4.4.0)
-    jekyll-google-tag-manager (1.0.1)
-      jekyll (~> 3.3)
     jekyll-mentions (1.4.1)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
@@ -245,7 +243,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-google-tag-manager
 
 BUNDLED WITH
    2.0.1

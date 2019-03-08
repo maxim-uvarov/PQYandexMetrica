@@ -23,32 +23,33 @@ PQYandexMetrica - коннектор для подключения к API Янд
 ## Видео из курса [Power BI для интернет-маркетинга](https://learn.needfordata.ru/pbi)
 
 ### Термины Яндекс.Метрики. Базовая настройка
-<iframe src="https://player.vimeo.com/video/193161266" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
+<iframe src="https://player.vimeo.com/video/193161266" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  
 ### Получение статистики по достижениям целей
-<iframe src="https://player.vimeo.com/video/262263858" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
+<iframe src="https://player.vimeo.com/video/262263858" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  
 ### Задание модели атрибуции в выгрузке
-<iframe src="https://player.vimeo.com/video/262264299" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
+<iframe src="https://player.vimeo.com/video/262264299" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  
 ### Выгрузка данных из Яндекс.Директ
-<iframe src="https://player.vimeo.com/video/262264288" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
+<iframe src="https://player.vimeo.com/video/262264288" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  
 ### Копирование запросов между PBIX и XLSX файлами
-<iframe src="https://player.vimeo.com/video/262268793" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
+<iframe src="https://player.vimeo.com/video/262268793" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  
 ### Отзыв токенов
-<iframe src="https://player.vimeo.com/video/198110945" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
+<iframe src="https://player.vimeo.com/video/198110945" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  
 ### Видео с выступления Максима Уварова 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UbehqWkzjO8?start=208" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="425" height="239" src="https://www.youtube.com/embed/UbehqWkzjO8?start=208" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  
 ## Полезные ссылки
 
 1. [Статья в marketing-wiki об использовании коннектора](http://marketing-wiki.ru/wiki/Экспорт_данных_из_сервиса_Яндекс.Метрика_в_excel_(power_query))

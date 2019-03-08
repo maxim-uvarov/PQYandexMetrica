@@ -1,13 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="ru-RU">
   <head>
-<!-- Begin Jekyll GTM tag v1.0.1 -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NNNNNNN');</script>
-<!-- End Jekyll GTM tag v1.0.1 -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,19 +16,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="PQYandexMetrica" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/","headline":"PQYandexMetrica","name":"PQYandexMetrica","description":"Коннектор для Power BI для подключения к Яндекс.Метрике.","@type":"WebSite","@context":"http://schema.org"}</script>
+{"headline":"PQYandexMetrica","url":"http://localhost:4000/","name":"PQYandexMetrica","description":"Коннектор для Power BI для подключения к Яндекс.Метрике.","@type":"WebSite","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=96b72e318051740ff8baf1b6b1067acb14bd5974">
+    <link rel="stylesheet" href="/assets/css/style.css?v=58b91997169951de8ee52017188c8faabe59c184">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <!-- Begin Jekyll GTM tag v1.0.1 -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNNNNNN"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Jekyll GTM tag v1.0.1 -->
 
     <div class="wrapper">
       <header>
@@ -59,7 +48,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <p>PQYandexMetrica - коннектор для подключения к API Яндекс.Метрики для Power BI и Excel (через Power Query).</p>
 
-<p>update 20190307 1229 1319</p>
+<h2 id="быстрый-старт-использования-pqyandexmetrica-для-power-bi-pbix">Быстрый старт использования PQYandexMetrica для Power BI (pbix)</h2>
+
+<ol>
+  <li>Скачиваем последнюю версию PBIX файла по <a href="https://github.com/maxim-uvarov/PQYandexMetrica/tree/master/Releases">ссылке</a></li>
+  <li>Открываем файл. Переходим в настройки Power BI 
+=&gt; Конфиденциальность =&gt; Уровни Конфиденциальности =&gt; Всегда игнорировать параметры уровней конфиденциальности
+<img src="/images/privacylevelsru.png" alt="" />
+=&gt; Privacy =&gt; Privacy Levels =&gt; Always Ignore Privacy Level settings
+<img src="/images/privacylevelsen.png" alt="" /></li>
+  <li>Переходим по <a href="https://oauth.yandex.ru/authorize?response_type=token&amp;client_id=dbb281abcd134b1bb4c624748f03cffe">ссылке</a>, жмем кнопку “разрешить”, копируем предоставленный токен, он понадобится нам дальше</li>
+  <li>Возвращаемся в Power BI, жмем на кнопку “Изменить запросы” 
+<img src="/images/editqueriesru.png" alt="" />
+“Edit Queries”
+<img src="/images/editqueriesen.png" alt="" /></li>
+  <li>В окне с запросами слева выбираем функцию PQYM, заполняем все поля необходиыми настройками, жмем кнопку “Вызвать”</li>
+  <li>Должно появиться окно с выбором настроек доступа. Оставляем настройки по умолчанию - анонимный доступ и жмем на кнопку подключение
+<img src="/images/connection1.png" alt="" /></li>
+  <li>Если все настройки произведены правильно, то новый запрос должен отобразить полученную из Яндекс.Метрики таблицу с данными.</li>
+</ol>
+
+<h2 id="видео-из-курса-power-bi-для-интернет-маркетинга">Видео из курса <a href="https://learn.needfordata.ru/pbi">Power BI для интернет-маркетинга</a></h2>
+
+<h3 id="термины-яндексметрики-базовая-настройка">Термины Яндекс.Метрики. Базовая настройка</h3>
+<iframe src="https://player.vimeo.com/video/193161266" width="425" height="239" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<h3 id="получение-статистики-по-достижениям-целей">Получение статистики по достижениям целей</h3>
+<iframe src="https://player.vimeo.com/video/262263858" width="425" height="239" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<h3 id="задание-модели-атрибуции-в-выгрузке">Задание модели атрибуции в выгрузке</h3>
+<iframe src="https://player.vimeo.com/video/262264299" width="425" height="239" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<h3 id="выгрузка-данных-из-яндексдирект">Выгрузка данных из Яндекс.Директ</h3>
+<iframe src="https://player.vimeo.com/video/262264288" width="425" height="239" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<h3 id="копирование-запросов-между-pbix-и-xlsx-файлами">Копирование запросов между PBIX и XLSX файлами</h3>
+<iframe src="https://player.vimeo.com/video/262268793" width="425" height="239" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<h3 id="отзыв-токенов">Отзыв токенов</h3>
+<iframe src="https://player.vimeo.com/video/198110945" width="425" height="239" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<h3 id="видео-с-выступления-максима-уварова">Видео с выступления Максима Уварова</h3>
+<iframe width="425" height="239" src="https://www.youtube.com/embed/UbehqWkzjO8?start=208" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="полезные-ссылки">Полезные ссылки</h2>
+
+<ol>
+  <li><a href="http://marketing-wiki.ru/wiki/Экспорт_данных_из_сервиса_Яндекс.Метрика_в_excel_(power_query)">Статья в marketing-wiki об использовании коннектора</a></li>
+  <li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=39379&amp;WT.mc_id=Blog_PBI_Announce_DI">Скачать Power Query для Excel 2010 и 2013</a></li>
+  <li><a href="https://github.com/40-02/PQGoogleAnalytics">PQGoogleAnalytics, проект на гитхабе</a></li>
+  <li><a href="https://tech.yandex.ru/metrika/doc/api2/api_v1/intro-docpage/">Справка по api</a></li>
+  <li><a href="https://tech.yandex.ru/metrika/doc/api2/api_v1/attrandmetr/dim_all-docpage/">Неполный список измерений и метрик в api в справке метрики</a></li>
+  <li>Расширенный список доступных измерений и метрик полученных по api в <a href="https://needfordata-my.sharepoint.com/:x:/r/personal/max_needfordata_ru/_layouts/15/Doc.aspx?sourcedoc=%7B48dbf278-2be3-499f-9181-f3e5327a6b8a%7D&amp;action=default">Excel Online</a> или <a href="https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640">Google Spreadsheets</a></li>
+  <li><a href="https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/">Правила работы с фильтрами в api</a></li>
+</ol>
+
+<h2 id="отказ-от-ответственности-disclaimer">Отказ от ответственности (disclaimer):</h2>
+
+<p>Программа создавалась для собственного пользования и распространяется по доброте душевной в состоянии as is (под лицензией GPLv3 http://s.40-02.ru/1DHW9dz). 
+Автор не несет ответственности за ущерб, который можно получить при использовании данной таблички.
+Если у вас появилось желание сказать спасибо за данную программу, можете написать автору на pqyandexmetrika@40-02.com.</p>
 
 
       </section>
@@ -71,6 +119,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </footer>
     </div>
     <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-135774507-1', 'auto');
+      ga('send', 'pageview');
+    </script>
     
   </body>
 </html>
