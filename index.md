@@ -1,4 +1,4 @@
-<!-- MarkdownTOC autoanchor="false" autolink="true" uri_encoding="false" markdown_preview="" levels="1,2,3,4,5" -->
+<!-- MarkdownTOC autoanchor="true" autolink="true" uri_encoding="false" markdown_preview="" levels="1,2,3,4,5" -->
 
 - [Быстрый старт использования PQYandexMetrica для Power BI \(pbix\)](#Быстрый-старт-использования-pqyandexmetrica-для-power-bi-pbix)
 - [Видео из курса Power BI для интернет-маркетинга](#Видео-из-курса-power-bi-для-интернет-маркетинга)
@@ -14,6 +14,7 @@
 
 <!-- /MarkdownTOC -->
 
+<a id="Быстрый-старт-использования-pqyandexmetrica-для-power-bi-pbix"></a>
 ## Быстрый старт использования PQYandexMetrica для Power BI (pbix)
 
 1. Скачиваем последнюю версию PBIX файла по [ссылке](https://github.com/maxim-uvarov/PQYandexMetrica/tree/master/Releases)
@@ -32,37 +33,46 @@
 ![](images/connection1.png)
 7. Если все настройки произведены правильно, то новый запрос должен отобразить полученную из Яндекс.Метрики таблицу с данными.
 
+<a id="Видео-из-курса-power-bi-для-интернет-маркетинга"></a>
 ## Видео из курса [Power BI для интернет-маркетинга](https://learn.needfordata.ru/pbi)
 
+<a id="Термины-ЯндексМетрики-Базовая-настройка"></a>
 ### Термины Яндекс.Метрики. Базовая настройка
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/193161266?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   
   
+<a id="Получение-статистики-по-достижениям-целей"></a>
 ### Получение статистики по достижениям целей
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/262263858?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
   
+<a id="Задание-модели-атрибуции-в-выгрузке"></a>
 ### Задание модели атрибуции в выгрузке
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/262264299?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
   
+<a id="Выгрузка-данных-из-ЯндексДирект"></a>
 ### Выгрузка данных из Яндекс.Директ
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/262264288?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   
   
+<a id="Копирование-запросов-между-pbix-и-xlsx-файлами"></a>
 ### Копирование запросов между PBIX и XLSX файлами
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/262268793?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   
   
+<a id="Отзыв-токенов"></a>
 ### Отзыв токенов
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/198110945?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   
   
+<a id="Видео-с-выступления-Максима-Уварова"></a>
 ### Видео с выступления Максима Уварова 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/UbehqWkzjO8?start=208' frameborder='0' allowfullscreen></iframe></div>
   
   
+<a id="Полезные-ссылки"></a>
 ## Полезные ссылки
 
 1. [Статья в marketing-wiki об использовании коннектора](http://marketing-wiki.ru/wiki/Экспорт_данных_из_сервиса_Яндекс.Метрика_в_excel_(power_query))
@@ -74,6 +84,7 @@
 6. [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
 
 
+<a id="Отказ-от-ответственности-disclaimer"></a>
 ## Отказ от ответственности (disclaimer): ##
 
 Программа создавалась для собственного пользования и распространяется по доброте душевной в состоянии as is (под лицензией GPLv3 http://s.40-02.ru/1DHW9dz). 
