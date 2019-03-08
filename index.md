@@ -7,10 +7,10 @@
 	- [Задание модели атрибуции в выгрузке](#Задание-модели-атрибуции-в-выгрузке)
 	- [Выгрузка данных из Яндекс.Директ](#Выгрузка-данных-из-ЯндексДирект)
 	- [Копирование запросов между PBIX и XLSX файлами](#Копирование-запросов-между-pbix-и-xlsx-файлами)
-	- [Отзыв токенов](#Отзыв-токенов)
+	- [Отзыв токена Яндекс.Метрики](#Отзыв-токена-ЯндексМетрики)
 	- [Видео с выступления Максима Уварова](#Видео-с-выступления-Максима-Уварова)
+- [Отказ от ответственности \(disclaimer\)](#Отказ-от-ответственности-disclaimer)
 - [Полезные ссылки](#Полезные-ссылки)
-- [Отказ от ответственности \(disclaimer\):](#Отказ-от-ответственности-disclaimer)
 
 <!-- /MarkdownTOC -->
 
@@ -62,8 +62,11 @@
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/262268793?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   
   
-<a id="Отзыв-токенов"></a>
-### Отзыв токенов
+<a id="Отзыв-токена-ЯндексМетрики"></a>
+### Отзыв токена Яндекс.Метрики 
+
+В случае, если есть подозрение, что ваш токен попал в чужие руки, вы всегда можете отозвать старый токен по ссылке: https://passport.yandex.ru/profile/access
+
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/198110945?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   
   
@@ -72,6 +75,15 @@
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/UbehqWkzjO8?start=208' frameborder='0' allowfullscreen></iframe></div>
   
   
+
+<a id="Отказ-от-ответственности-disclaimer"></a>
+## Отказ от ответственности (disclaimer) ##
+
+Программа создавалась для собственного пользования и распространяется по доброте душевной в состоянии as is (под лицензией GPLv3 http://s.40-02.ru/1DHW9dz). 
+Автор не несет ответственности за ущерб, который можно получить при использовании данной таблички.
+Если у вас появилось желание сказать спасибо за данную программу, можете написать автору на pqyandexmetrika@40-02.com. 
+
+
 <a id="Полезные-ссылки"></a>
 ## Полезные ссылки
 
@@ -83,10 +95,3 @@
 6. Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://needfordata-my.sharepoint.com/:x:/r/personal/max_needfordata_ru/_layouts/15/Doc.aspx?sourcedoc=%7B48dbf278-2be3-499f-9181-f3e5327a6b8a%7D&action=default) или [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640)
 6. [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
 
-
-<a id="Отказ-от-ответственности-disclaimer"></a>
-## Отказ от ответственности (disclaimer): ##
-
-Программа создавалась для собственного пользования и распространяется по доброте душевной в состоянии as is (под лицензией GPLv3 http://s.40-02.ru/1DHW9dz). 
-Автор не несет ответственности за ущерб, который можно получить при использовании данной таблички.
-Если у вас появилось желание сказать спасибо за данную программу, можете написать автору на pqyandexmetrika@40-02.com. 
