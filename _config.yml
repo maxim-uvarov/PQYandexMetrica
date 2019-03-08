@@ -1,4 +1,4 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-time-machine
 google_analytics: UA-135774507-1
 plugins:  
  - jekyll-redirect-from
