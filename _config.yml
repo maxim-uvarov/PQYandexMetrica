@@ -1,4 +1,4 @@
-theme: jekyll-theme-dinky
+theme: jekyll-theme-slate
 google_analytics: UA-135774507-1
 plugins:  
  - jekyll-redirect-from
