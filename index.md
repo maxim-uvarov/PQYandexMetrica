@@ -23,31 +23,9 @@ PQYandexMetrica - коннектор для подключения к API Янд
 ## Видео из курса [Power BI для интернет-маркетинга](https://learn.needfordata.ru/pbi)
 
 ### Термины Яндекс.Метрики. Базовая настройка
-<iframe src="https://player.vimeo.com/video/193161266" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/193161266?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   
   
-### Получение статистики по достижениям целей
-<iframe src="https://player.vimeo.com/video/262263858" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-  
-### Задание модели атрибуции в выгрузке
-<iframe src="https://player.vimeo.com/video/262264299" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-  
-### Выгрузка данных из Яндекс.Директ
-<iframe src="https://player.vimeo.com/video/262264288" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-  
-### Копирование запросов между PBIX и XLSX файлами
-<iframe src="https://player.vimeo.com/video/262268793" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-  
-### Отзыв токенов
-<iframe src="https://player.vimeo.com/video/198110945" width="425" height="239" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-  
-### Видео с выступления Максима Уварова 
-<iframe width="425" height="239" src="https://www.youtube.com/embed/UbehqWkzjO8?start=208" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
   
 ## Полезные ссылки
