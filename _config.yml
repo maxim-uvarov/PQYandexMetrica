@@ -1,6 +1,9 @@
 theme: jekyll-theme-slate
 google_analytics: UA-135774507-1
+title: PQYandexMetrica - коннектор для выгрузки данных из API Яндекс.Метрики в Power BI и Excel
+description: Неофициальный, открытый коннектор - скрипт на языке Power Query для выгрузки данных из Reporting API Яндекс.Метрики
 plugins:  
  - jekyll-redirect-from
  - jekyll-seo-tag
  - jekyll-sitemap
+
