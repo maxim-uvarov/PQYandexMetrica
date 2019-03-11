@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.21] 
+### Changed
+- Косметически изменил функции GetMetricaCounters, GetDirectIDs
 
 ## [1.18]    
 ### Changed
