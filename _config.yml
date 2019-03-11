@@ -1,7 +1,7 @@
 theme: jekyll-theme-slate
 google_analytics: UA-135774507-1
-title: PQYandexMetrica - коннектор для выгрузки данных из API Яндекс.Метрики в Power BI и Excel
-description: Неофициальный, открытый коннектор - скрипт на языке Power Query для выгрузки данных из Reporting API Яндекс.Метрики
+title: PQYandexMetrica
+description: Неофициальный, открытый коннектор для выгрузки данных из Reporting API Яндекс.Метрики в Power BI и Excel, скрипт на языке Power Query
 lang: ru-RU
 facebook:
   app_id: 319015628771849
