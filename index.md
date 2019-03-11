@@ -1,3 +1,10 @@
+---
+title: PQYandexMetrica - коннектор к Яндекс.Метрике для Power BI и Excel (через Power Query)
+image: /images/PQYandexMetrica.png
+---
+
+
+
 <!-- MarkdownTOC autoanchor="true" autolink="true" uri_encoding="false" markdown_preview="" levels="1,2,3,4,5" -->
 
 - [Быстрый старт использования PQYandexMetrica для Power BI \(pbix\)](#Быстрый-старт-использования-pqyandexmetrica-для-power-bi-pbix)
