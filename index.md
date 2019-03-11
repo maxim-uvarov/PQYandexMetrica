@@ -1,6 +1,6 @@
 ---
 title: PQYandexMetrica - коннектор к Яндекс.Метрике для Power BI и Excel (через Power Query)
-image: /images/OGPQYandexMetrica.png
+image: /images/OGPQYandexMetrica2.png
 ---
 
 - Оглавление
