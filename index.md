@@ -21,7 +21,6 @@ canonical_url: 'https://pqyandexmetrica.ru'
 	- [Отчет 1](#Отчет-1)
 	- [Отчет 2](#Отчет-2)
 - [Отказ от ответственности \(disclaimer\)](#Отказ-от-ответственности-disclaimer)
-- [Ставь лайк!](#Ставь-лайк)
 - [Полезные ссылки](#Полезные-ссылки)
 
 <!-- /MarkdownTOC -->
@@ -196,12 +195,6 @@ PQYandexMetrica поддерживает использование фильтр
 Программа создавалась для собственного пользования и распространяется по доброте душевной в состоянии как есть (под лицензией GPLv3 <http://s.40-02.ru/1DHW9dz>). 
 Автор не несет ответственности за ущерб, который можно получить при использовании данной програмы.
 Если у вас появилось желание сказать спасибо за данную программу, можете написать автору на pqyandexmetrika@40-02.com. 
-
-
-<a id="Ставь-лайк"></a>
-## Ставь лайк!
-
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fuvarov.maxim%2Fposts%2F823310171368192&width=auto" width="auto" height="637" style="border:none;overflow:hidden;width:100%" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
 
 <a id="Полезные-ссылки"></a>
