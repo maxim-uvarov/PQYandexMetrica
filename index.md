@@ -201,7 +201,7 @@ PQYandexMetrica поддерживает использование фильтр
 <a id="Ставь-лайк"></a>
 ## Ставь лайк!
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fuvarov.maxim%2Fposts%2F823310171368192&width=auto" width="500" height="637" style="border:none;overflow:hidden;width:100%" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fuvarov.maxim%2Fposts%2F823310171368192&width=auto" width="auto" height="637" style="border:none;overflow:hidden;width:100%" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
 
 <a id="Полезные-ссылки"></a>
