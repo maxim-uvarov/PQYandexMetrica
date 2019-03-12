@@ -1,6 +1,7 @@
 ---
 title: PQYandexMetrica - коннектор к Яндекс.Метрике для Power BI и Excel (через Power Query)
-image: /images/OGPQYandexMetrica2.png
+image: /images/OGPQYandexMetrica3.png
+canonical_url: 'https://pqyandexmetrica.ru'
 ---
 
 ## Оглавление
@@ -95,6 +96,7 @@ PQYandexMetrica поддерживает использование фильтр
 
 В перечисленных метриках <goal_id> нужно заменить на id запрашиваемой цели. Этот id можно найти на странице настройка счетчика, на вкладке цели (см [скриншот](images/metricagoalids1.png))
 
+Вот [справка на параметризацию запросов в метрике](https://tech.yandex.ru/metrika/doc/api2/api_v1/param-docpage/).
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/262263858?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -107,6 +109,7 @@ PQYandexMetrica поддерживает использование фильтр
 	* last (последний источник) - по умолчанию
 	* lastsign (последний значимый источник) - самая пацанская атрибуция
 
+Вот [справка на параметризацию запросов в метрике](https://tech.yandex.ru/metrika/doc/api2/api_v1/param-docpage/).
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/262264299?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
