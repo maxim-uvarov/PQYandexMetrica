@@ -16,6 +16,9 @@ image: /images/OGPQYandexMetrica2.png
 	- [Копирование запросов между PBIX и XLSX файлами](#Копирование-запросов-между-pbix-и-xlsx-файлами)
 	- [Отзыв токена Яндекс.Метрики](#Отзыв-токена-ЯндексМетрики)
 	- [Видео мастер-класса Максима Уварова на вебмастерской конференции](#Видео-мастер-класса-Максима-Уварова-на-вебмастерской-конференции)
+- [Примеры отчетов](#Примеры-отчетов)
+	- [Отчет 1](#Отчет-1)
+	- [Отчет 2](#Отчет-2)
 - [Отказ от ответственности \(disclaimer\)](#Отказ-от-ответственности-disclaimer)
 - [Полезные ссылки](#Полезные-ссылки)
 
@@ -136,7 +139,39 @@ PQYandexMetrica поддерживает использование фильтр
 ### Видео мастер-класса Максима Уварова на вебмастерской конференции
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/UbehqWkzjO8?start=208' frameborder='0' allowfullscreen></iframe></div>
   
-  
+<a id="Примеры-отчетов"></a>
+## Примеры отчетов
+
+В примерах ниже приведены конфигурации действующих отчетов проекта <marketing-wiki.ru> с активным токеном. Не забудьте изменить токен и id счетчика, если захотите получить подобный отчет для своего проекта. 
+
+<a id="Отчет-1"></a>
+### Отчет 1
+
+С фильтром по переходам из Поисковых Систем (последний значимый источник), со статистикой по количеству визитов, средней длительностью визита и абсолютным числом отказов за период с 1 января 2019 года по вчера.
+
+`= PQYM("21781912", 
+    "ym:s:visits,ym:s:avgVisitDuration,ym:s:bounces", 
+    "ym:s:date,ym:s:lastsignTrafficSource", 
+    "2019-01-01", 
+    "yesterday", 
+    "AQAAAAAQy8J1AAPquhq4JeyqQE6ygfUNoMnGr8E", 
+    "ym:s:lastsignTrafficSourceName=='Переходы из поисковых систем'", 
+    null)`
+
+
+<a id="Отчет-2"></a>
+### Отчет 2
+
+Отчет по адресам страниц, со статистикой по количеству просмотров и пользователей, посетивших страницу за последние 365 дней (по вчера).
+
+`== PQYM("21781912", 
+    "ym:pv:pageviews,ym:pv:users", 
+    "ym:pv:URLPath", 
+    "365daysAgo", 
+    "1daysAgo", 
+    "AQAAAAAQy8J1AAPquhq4JeyqQE6ygfUNoMnGr8E", 
+    null, 
+    null)`
 
 <a id="Отказ-от-ответственности-disclaimer"></a>
 ## Отказ от ответственности (disclaimer) ##
@@ -149,11 +184,11 @@ PQYandexMetrica поддерживает использование фильтр
 <a id="Полезные-ссылки"></a>
 ## Полезные ссылки
 
-1. [Статья в marketing-wiki об использовании коннектора](http://marketing-wiki.ru/wiki/Экспорт_данных_из_сервиса_Яндекс.Метрика_в_excel_(power_query))
-2. [Скачать Power Query для Excel 2010 и 2013](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI)
+2. [Скачать надстройку Power Query для Excel 2010 и 2013](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI)
 3. [PQGoogleAnalytics, проект на гитхабе](https://github.com/40-02/PQGoogleAnalytics)
-4. [Справка по api](https://tech.yandex.ru/metrika/doc/api2/api_v1/intro-docpage/)
+4. [Справка по api Яндекс.Метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/intro-docpage/)
+6. [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
 5. [Неполный список измерений и метрик в api в справке метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/attrandmetr/dim_all-docpage/)
 6. Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://needfordata-my.sharepoint.com/:x:/r/personal/max_needfordata_ru/_layouts/15/Doc.aspx?sourcedoc=%7B48dbf278-2be3-499f-9181-f3e5327a6b8a%7D&action=default) или [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640)
-6. [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
+1. [Статья в marketing-wiki об использовании коннектора](http://marketing-wiki.ru/wiki/Экспорт_данных_из_сервиса_Яндекс.Метрика_в_excel_(power_query))
 
