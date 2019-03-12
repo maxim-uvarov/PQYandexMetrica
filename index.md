@@ -149,14 +149,16 @@ PQYandexMetrica поддерживает использование фильтр
 
 С фильтром по переходам из Поисковых Систем (последний значимый источник), со статистикой по количеству визитов, средней длительностью визита и абсолютным числом отказов за период с 1 января 2019 года по вчера.
 
-`= PQYM("21781912", 
+```
+= PQYM("21781912", 
     "ym:s:visits,ym:s:avgVisitDuration,ym:s:bounces", 
     "ym:s:date,ym:s:lastsignTrafficSource", 
     "2019-01-01", 
     "yesterday", 
     "AQAAAAAQy8J1AAPquhq4JeyqQE6ygfUNoMnGr8E", 
     "ym:s:lastsignTrafficSourceName=='Переходы из поисковых систем'", 
-    null)`
+    null)
+```
 
 
 <a id="Отчет-2"></a>
@@ -164,14 +166,16 @@ PQYandexMetrica поддерживает использование фильтр
 
 Отчет по адресам страниц, со статистикой по количеству просмотров и пользователей, посетивших страницу за последние 365 дней (по вчера).
 
-`== PQYM("21781912", 
+```
+== PQYM("21781912", 
     "ym:pv:pageviews,ym:pv:users", 
     "ym:pv:URLPath", 
     "365daysAgo", 
     "1daysAgo", 
     "AQAAAAAQy8J1AAPquhq4JeyqQE6ygfUNoMnGr8E", 
     null, 
-    null)`
+    null)
+```
 
 <a id="Отказ-от-ответственности-disclaimer"></a>
 ## Отказ от ответственности (disclaimer) ##
