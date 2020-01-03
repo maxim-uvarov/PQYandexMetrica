@@ -62,7 +62,7 @@ canonical_url: 'https://pqyandexmetrica.ru'
 
 Неполный список группировок и метрик есть в [справке Яндекс.Метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/attrandmetr/dim_all-docpage/). 
 
-Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://needfordata-my.sharepoint.com/:x:/r/personal/max_needfordata_ru/_layouts/15/Doc.aspx?sourcedoc=%7B48dbf278-2be3-499f-9181-f3e5327a6b8a%7D&action=default) или [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640).
+Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://nfd2-my.sharepoint.com/:x:/g/personal/maximum_nfd2_onmicrosoft_com/EUtMMpBUbxxMkkA-E9JrqycBh4dez9LHrNAJF4m_6vbt3Q?e=Dt4eLl) или [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640).
 
 API поддерживает три типа группировок и метрик:
 
