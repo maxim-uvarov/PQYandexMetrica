@@ -64,6 +64,7 @@ canonical_url: 'https://pqyandexmetrica.ru'
 ![](images/connection1.png)
 7. Если все настройки произведены правильно, то новый запрос должен отобразить полученную из Яндекс.Метрики таблицу с данными.
 
+
 <a id="Видео-мануал-по-ЯндексМетрике-5-урок-курса-Максим-Уварова-power-bi-для-интернет-маркетинга"></a>
 ## Видео-мануал по Яндекс.Метрике (5 урок курса Максим Уварова [Power BI для интернет-маркетинга](https://learn.needfordata.ru/pbi))
 
@@ -82,7 +83,10 @@ canonical_url: 'https://pqyandexmetrica.ru'
 
 Неполный список группировок и метрик есть в [справке Яндекс.Метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/attrandmetr/dim_all-docpage/). 
 
-Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://nfd2-my.sharepoint.com/:x:/g/personal/maximum_nfd2_onmicrosoft_com/EUtMMpBUbxxMkkA-E9JrqycBh4dez9LHrNAJF4m_6vbt3Q?e=Dt4eLl) или [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640).
+Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://github.com/maxim-uvarov/PQYandexMetrica/raw/master/Additional%20files/metrikaDimensionsMetricsList.xlsx).
+
+<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmaximuvarov.ru%2Fvideos%2F559271008338995%2F&show_text=false&width=560" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+
 
 API поддерживает три типа группировок и метрик:
 
