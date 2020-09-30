@@ -30,7 +30,7 @@ canonical_url: 'https://pqyandexmetrica.ru'
 <a id="Загрузка-pqyandexmetrica"></a>
 ## Загрузка PQYandexMetrica
 
-Коннектор PQYandexMetrica доступен в форме функции (доступна на [github](https://github.com/maxim-uvarov/PQYandexMetrica/blob/master/Power%20Query%20functions/PQYandexMetrika.pq)) или запакованного коннектора [.mez](https://github.com/morinad/PQYandexMetrica/raw/master/YandexMetrika.mez) (запаковал Александр Морин, спасибо ему). 
+Коннектор PQYandexMetrica доступен в форме функции (доступна на [github](https://github.com/maxim-uvarov/PQYandexMetrica/blob/master/Power%20Query%20functions/PQYandexMetrika.pq)) или запакованного коннектора [.mez](https://github.com/morinad/PQYandexMetrica/raw/master/YandexMetrika.mez) (запаковал [Александр Морин](https://github.com/morinad/), спасибо ему). 
 
 Особенности работы в форме [функции](https://github.com/maxim-uvarov/PQYandexMetrica/blob/master/Power%20Query%20functions/PQYandexMetrika.pq):
 1. Токен прописывается в коде вызова функции
