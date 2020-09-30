@@ -8,22 +8,42 @@ canonical_url: 'https://pqyandexmetrica.ru'
 
 <!-- MarkdownTOC autoanchor="true" autolink="true" uri_encoding="false" markdown_preview="" levels="1,2,3,4,5" -->
 
+- [Загрузка PQYandexMetrica](#Загрузка-pqyandexmetrica)
 - [Быстрый старт использования PQYandexMetrica для Power BI \(pbix\)](#Быстрый-старт-использования-pqyandexmetrica-для-power-bi-pbix)
-- [Видео из курса Максим Уварова Power BI для интернет-маркетинга](#Видео-из-курса-Максим-Уварова-power-bi-для-интернет-маркетинга)
-	- [Термины Яндекс.Метрики. Базовая настройка PQYandexMetrica](#Термины-ЯндексМетрики-Базовая-настройка-pqyandexmetrica)
-	- [Получение статистики по достижениям целей](#Получение-статистики-по-достижениям-целей)
-	- [Задание модели атрибуции в выгрузке](#Задание-модели-атрибуции-в-выгрузке)
-	- [Выгрузка данных по расходам Яндекс.Директ из api Яндекс.Метрики](#Выгрузка-данных-по-расходам-ЯндексДирект-из-api-ЯндексМетрики)
-	- [Копирование запросов между PBIX и XLSX файлами](#Копирование-запросов-между-pbix-и-xlsx-файлами)
-	- [Отзыв токена Яндекс.Метрики](#Отзыв-токена-ЯндексМетрики)
-	- [Видео мастер-класса Максима Уварова на вебмастерской конференции](#Видео-мастер-класса-Максима-Уварова-на-вебмастерской-конференции)
+- [Видео-мануал по Яндекс.Метрике \(5 урок курса Максим Уварова Power BI для интернет-маркетинга\)](#Видео-мануал-по-ЯндексМетрике-5-урок-курса-Максим-Уварова-power-bi-для-интернет-маркетинга)
+  - [Термины Яндекс.Метрики. Базовая настройка PQYandexMetrica](#Термины-ЯндексМетрики-Базовая-настройка-pqyandexmetrica)
+  - [Получение статистики по достижениям целей](#Получение-статистики-по-достижениям-целей)
+  - [Задание модели атрибуции в выгрузке](#Задание-модели-атрибуции-в-выгрузке)
+  - [Выгрузка данных по расходам Яндекс.Директ из api Яндекс.Метрики](#Выгрузка-данных-по-расходам-ЯндексДирект-из-api-ЯндексМетрики)
+  - [Копирование запросов между PBIX и XLSX файлами](#Копирование-запросов-между-pbix-и-xlsx-файлами)
+  - [Отзыв токена Яндекс.Метрики](#Отзыв-токена-ЯндексМетрики)
+  - [Видео мастер-класса Максима Уварова на вебмастерской конференции](#Видео-мастер-класса-Максима-Уварова-на-вебмастерской-конференции)
 - [Примеры отчетов](#Примеры-отчетов)
-	- [Отчет 1](#Отчет-1)
-	- [Отчет 2](#Отчет-2)
+  - [Отчет 1](#Отчет-1)
+  - [Отчет 2](#Отчет-2)
 - [Отказ от ответственности \(disclaimer\)](#Отказ-от-ответственности-disclaimer)
 - [Полезные ссылки](#Полезные-ссылки)
 
 <!-- /MarkdownTOC -->
+
+
+<a id="Загрузка-pqyandexmetrica"></a>
+## Загрузка PQYandexMetrica
+
+Коннектор PQYandexMetrica доступен в форме функции (доступна на [github](https://github.com/maxim-uvarov/PQYandexMetrica/blob/master/Power%20Query%20functions/PQYandexMetrika.pq)) или запакованного коннектора [.mez](https://github.com/morinad/PQYandexMetrica/raw/master/YandexMetrika.mez) (запаковал Александр Морин, спасибо ему). 
+
+Особенности работы в форме [функции](https://github.com/maxim-uvarov/PQYandexMetrica/blob/master/Power%20Query%20functions/PQYandexMetrika.pq):
+1. Токен прописывается в коде вызова функции
+2. Не требует Gateway для обновления в Power BI Service
+3. Файл можно обновлять на разных компьютерах
+
+Особенности работы в форме [.mez файла](https://github.com/morinad/PQYandexMetrica/raw/master/YandexMetrika.mez) Александра Морина:
+1. Однажды установленный .mez файл будет доступен как подключение во всех локальных PBIX 
+2. Для обновления PBIX файла на другом компьютере потребуется установить .MEZ коннектор и авторизирироваться в яндекс.Метрике
+3. Для обновления в Power BI Service нужны установленные Standard/Personal Gateway
+4. Не нужно копировать-вставлять url для авторизации в Яндекс.Метрике 
+5. При создании каждого нового запроса и при обновлении запросов нужно проходить процедуру авторизации в Яндекс.Метрике
+
 
 <a id="Быстрый-старт-использования-pqyandexmetrica-для-power-bi-pbix"></a>
 ## Быстрый старт использования PQYandexMetrica для Power BI (pbix)
@@ -44,8 +64,8 @@ canonical_url: 'https://pqyandexmetrica.ru'
 ![](images/connection1.png)
 7. Если все настройки произведены правильно, то новый запрос должен отобразить полученную из Яндекс.Метрики таблицу с данными.
 
-<a id="Видео-из-курса-Максим-Уварова-power-bi-для-интернет-маркетинга"></a>
-## Видео из курса Максим Уварова [Power BI для интернет-маркетинга](https://learn.needfordata.ru/pbi)
+<a id="Видео-мануал-по-ЯндексМетрике-5-урок-курса-Максим-Уварова-power-bi-для-интернет-маркетинга"></a>
+## Видео-мануал по Яндекс.Метрике (5 урок курса Максим Уварова [Power BI для интернет-маркетинга](https://learn.needfordata.ru/pbi))
 
 <a id="Термины-ЯндексМетрики-Базовая-настройка-pqyandexmetrica"></a>
 ### Термины Яндекс.Метрики. Базовая настройка PQYandexMetrica
@@ -200,12 +220,11 @@ PQYandexMetrica поддерживает использование фильтр
 <a id="Полезные-ссылки"></a>
 ## Полезные ссылки
 
-2. [Скачать надстройку Power Query для Excel 2010 и 2013](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI)
-3. [PQGoogleAnalytics, проект на гитхабе](https://github.com/40-02/PQGoogleAnalytics)
-4. [Справка по api Яндекс.Метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/intro-docpage/)
-6. [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
+1. [Скачать надстройку Power Query для Excel 2010 и 2013](https://www.microsoft.com/en-us/download/details.aspx?id=39379&WT.mc_id=Blog_PBI_Announce_DI)
+2. [PQGoogleAnalytics, проект на гитхабе](https://github.com/40-02/PQGoogleAnalytics)
+3. [Справка по api Яндекс.Метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/intro-docpage/)
+4. [Правила работы с фильтрами в api](https://tech.yandex.ru/metrika/doc/api2/api_v1/segmentation-docpage/) 
 5. [Неполный список измерений и метрик в api в справке метрики](https://tech.yandex.ru/metrika/doc/api2/api_v1/attrandmetr/dim_all-docpage/)
 6. Расширенный список доступных измерений и метрик полученных по api в [Excel Online](https://needfordata-my.sharepoint.com/:x:/r/personal/max_needfordata_ru/_layouts/15/Doc.aspx?sourcedoc=%7B48dbf278-2be3-499f-9181-f3e5327a6b8a%7D&action=default) или [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1zWAq_wYQymYcJvKV-XcodNVTYu5ZiZJ2YqKWhscPf0Y/edit#gid=629438640)
-1. [Статья в marketing-wiki об использовании коннектора](http://marketing-wiki.ru/wiki/Экспорт_данных_из_сервиса_Яндекс.Метрика_в_excel_(power_query))
+7. [Статья в marketing-wiki об использовании коннектора](http://marketing-wiki.ru/wiki/Экспорт_данных_из_сервиса_Яндекс.Метрика_в_excel_(power_query))
 
-update
