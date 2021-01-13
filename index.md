@@ -8,7 +8,7 @@ canonical_url: 'https://pqyandexmetrica.ru'
 
 <!-- MarkdownTOC autoanchor="true" autolink="true" uri_encoding="false" markdown_preview="" levels="1,2,3,4,5" -->
 
-- [Загрузка PQYandexMetrica](#Загрузка-pqyandexmetrica)
+- [Скачать PQYandexMetrica](#Загрузка-pqyandexmetrica)
 - [Быстрый старт использования PQYandexMetrica для Power BI \(pbix\)](#Быстрый-старт-использования-pqyandexmetrica-для-power-bi-pbix)
 - [Видео-мануал по Яндекс.Метрике \(5 урок курса Максим Уварова Power BI для интернет-маркетинга\)](#Видео-мануал-по-ЯндексМетрике-5-урок-курса-Максим-Уварова-power-bi-для-интернет-маркетинга)
   - [Термины Яндекс.Метрики. Базовая настройка PQYandexMetrica](#Термины-ЯндексМетрики-Базовая-настройка-pqyandexmetrica)
@@ -28,7 +28,7 @@ canonical_url: 'https://pqyandexmetrica.ru'
 
 
 <a id="Загрузка-pqyandexmetrica"></a>
-## Загрузка PQYandexMetrica
+## Откуда скачать PQYandexMetrica
 
 Коннектор PQYandexMetrica доступен в форме функции (доступна на [github](https://github.com/maxim-uvarov/PQYandexMetrica/blob/master/Power%20Query%20functions/PQYandexMetrika.pq)) или запакованного коннектора [.mez](https://github.com/morinad/PQYandexMetrica/raw/master/YandexMetrika.mez) (запаковал [Александр Морин](https://github.com/morinad/), спасибо ему). 
 
